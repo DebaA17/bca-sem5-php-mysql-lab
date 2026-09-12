@@ -1,0 +1,2 @@
+Hello from sample.txt
+This file is read by exercise 11.
