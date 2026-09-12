@@ -19,7 +19,7 @@ class Student {
 }
 
 try {
-    $s = new Student('Asha', 12);
+    $s = new Student('Debasis', 17);
     $s->show();
 } catch (Exception $e) {
     echo $e->getMessage();
