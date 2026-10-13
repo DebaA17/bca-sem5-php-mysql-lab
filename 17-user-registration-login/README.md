@@ -1,7 +1,7 @@
 # Code 17: User Registration and Login System
 
-This example implements registration, login, a protected profile page, and
-logout using PHP, MySQL, sessions, prepared statements, CSRF tokens, and
+This short example implements registration, login, a protected profile page,
+and logout using PHP, MySQL, sessions, prepared statements, and
 `password_hash()`/`password_verify()`.
 
 ## Setup
@@ -23,5 +23,4 @@ logout using PHP, MySQL, sessions, prepared statements, CSRF tokens, and
 
 4. Open `http://localhost:8000/register.php` and create an account.
 
-The password is never stored as plain text. The `users.password_hash` column
-stores the result of `password_hash()` instead.
+The password is stored as a hash in `users.password_hash`, not as plain text.
