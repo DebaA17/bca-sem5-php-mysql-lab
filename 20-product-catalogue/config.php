@@ -1,0 +1,12 @@
+<?php
+$conn = new PDO(
+    'mysql:host=127.0.0.1;dbname=php_lab;charset=utf8mb4',
+    'devuser',
+    'password123',
+    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+);
+
+function clean($value)
+{
+    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+}
